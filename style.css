@@ -1,0 +1,89 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(https://thumbs.dreamstime.com/z/red-white-bbq-14612256.jpg);
+    background-size: cover;
+  }
+  
+  h1,p {
+    text-align: center;
+  }
+  
+  div.form {
+    display: block;
+    text-align: center;
+    width: 95%;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  form {
+    background-color: hsla(216, 50%, 50%, 0.9);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-radius: 9px;
+    font-size: 18px;
+  }
+  
+  label {
+    display: block;
+    padding: 3px;
+    font-weight: bold;
+  }
+  
+  input {
+    margin: 0 0 0 0;
+    background-color: hsla(42, 98%, 84%, .6);
+    color: black;
+    display: block;
+    font-size: 18px;
+    width: 80%;
+  }
+  
+  .inline {
+    display: inline;
+    width: unset;
+    margin: auto;
+    vertical-align: middle;
+    padding: 2px;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    padding: 20px;
+    margin: 1em auto;
+  }
+  
+  textarea {
+    margin: 0.4em auto;
+    background-color: hsla(42, 98%, 84%, .6);
+  }
+  
+  h1, p, footer {
+    background-color: hsla(0, 0%, 75%, 0.75);
+    width: 95%;
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9px;
+  }
+  
+  legend {
+    padding: 0 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  input[type=radio] {
+    margin: 0 2 0 30;
+    }
+  
+  input[type=checkbox] {
+    margin: 0 2 0 30;
+  }
