@@ -6,70 +6,73 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <div class="form">
-    <h1 id="title">Stephens Family BBQ Survey</h1>
-    <p id="description">Thank you for participating!  Your input may <i> or may not, </i> be considered.
-    <form id="survey-form">
-      <fieldset>
-        <!--Name,Email,Age(optional)-->
-        <label id="name-label">Name<input required name="name" id="name" placeholder="Enter your name" type="text"/></label>
-        <label id="email-label">Email<input required name="email" id="email" placeholder="Enter your email" type="email"/></label>
-        <label id="number-label">Age (optional)<input name="age" id="number" placeholder="Age" type="number" min="0" max="120"/></label>
-      </fieldset>
-      <fieldset>
-        <!--Role(drop), Recommend(radio)-->
-        <label>Which best describes your famliy role?
-          <select name="role" id="dropdown">
-            <option value="">Select your role</option>
-            <option value="1">Close Relative</option>
-            <option value="2">Distant Relative</option>
-            <option value="3">Freeloader</option>
-            <option value="4">Who are the Stephens'?</option>
-            <option value="5">Other</option>
-          </select>
-        </label>
-        </fieldset>
-        <fieldset>
-        <legend>Would you recommend this BBQ to a friend?</legend>
-        <label><input type="radio" name="recommend" class="inline" value="definitely" /> Definitely!</label>
-        <label><input type="radio" name="recommend" class="inline" value="maybe" /> Maybe</label>
-         <label><input type="radio" name="recommend" class="inline" value="no"/> HECK TO THE NO!</label>
-      </fieldset>
-      <fieldset>
-        <!--Favorite feature(drop)-->
-        <legend>What was your favorite feature of the BBQ?</legend>
-          <select>
-            <option value "">What was the best part of today?</option>
-            <option value "1">The hot weather</option>
-            <option value "2">The hot cold food</option>
-            <option value "3">The cold hot food</option>
-            <option value "4">The clear plan and normal start time</option>
-          </select>
-      </fieldset>
-      <fieldset>
-        <!--Improvements(check multiple)-->
-        <legend name="improvements">Are there any improvements for the next get together? (Check all that apply)</legend>
-          <input id="meat" type="checkbox" name="improvments" value="meat" class="inline"><label for="meat" class="inline">Buy or thaw meat before</label><br/>
-          <input id="schedule" type="checkbox" name="improvements" value="schedule" class="inline"><label for="schedule" class="inline">Schedule later in the day</label><br/>
-          <input id="orderout" type="checkbox" name="improvements" value="orderout" class="inline"><label for="orderout" class="inline"><s>Only let people volunteer for what</s> Order out</label><br/>
-          <input id="shade" type="checkbox" name="improvements" value="shade" class="inline"><label for="shade" class="inline">Set up in the shade</label><br/>
-          <input id="prepare" type="checkbox" name="improvements" value="prepare" class="inline"><label for="prepare" class="inline"><s>Prepare food ahead</s> Order out</label><br/>
-          <input id="fridge" type="checkbox" name="improvements" value="fridge" class="inline"><label for="fridge" class="inline">Prepare fridge space ahead of time</label><br/>
-          <input id="ac" type="checkbox" name="improvements" value="ac" class="inline"><label for="ac" class="inline">Rent air conditioned tent</label><br/>
-          <input id="dont" type="checkbox" name="improvements" value="dont" class="inline"><label for="dont" class="inline">Maybe just don't plan outside next time</label><br/>
-          <input id="other" type="checkbox" name="improvements" value="other" class="inline"><label for="other" class="inline">Other_________________________</label><br/>
-      </fieldset>
-      <fieldset>
-        <!--Comments box,Submit button-->
-        <label>Any additional comments or suggestions? <br/>
-          <textarea name="comments" rows="5" cols="50" placeholder="Enter your comments here..."></textarea>
-        </label>
-        <input type="submit" value="Submit" id="submit"/>
-      </fieldset>
-    </form>
-      <footer>
-        <p>Thanks for coming! You don't gotta go home, but you can't stay here!</p>
-      </footer>
+    <div class="container">
+      <div class="form">
+        <h1 id="title">Stephens Family BBQ Survey</h1>
+        <p id="description">Thank you for participating!  Your input may <em> or may not, </em> be considered.
+        <form id="survey-form">
+          <fieldset>
+            <!--Name,Email,Age(optional)-->
+            <label id="name-label">Name<input required name="name" id="name" placeholder="Enter your name" type="text"/></label>
+            <label id="email-label">Email<input required name="email" id="email" placeholder="Enter your email" type="email"/></label>
+            <label id="number-label">Age (optional)<input name="age" id="number" placeholder="Age" type="number" min="0" max="120"/></label>
+          </fieldset>
+          <fieldset>
+            <!--Role(drop), Recommend(radio)-->
+            <label>Which best describes your famliy role?
+              <select name="role" id="dropdown">
+                <option value="">Select your role</option>
+                <option value="1">Close Relative</option>
+                <option value="2">Distant Relative</option>
+                <option value="3">Freeloader</option>
+                <option value="4">Who are the Stephens'?</option>
+                <option value="5">Other</option>
+              </select>
+            </label>
+            </fieldset>
+            <fieldset>
+            <legend>Would you recommend this BBQ to a friend?</legend>
+            <label><input type="radio" name="recommend" class="inline" value="definitely" /> Definitely!</label>
+            <label><input type="radio" name="recommend" class="inline" value="maybe" /> Maybe</label>
+             <label><input type="radio" name="recommend" class="inline" value="no"/> HECK TO THE NO!</label>
+          </fieldset>
+          <fieldset>
+            <!--Favorite feature(drop)-->
+            <legend>What was your favorite feature of the BBQ?</legend>
+              <select>
+                <option value="">What was the best part of today?</option>
+                <option value="1">The hot weather</option>
+                <option value="2">The hot cold food</option>
+                <option value="3">The cold hot food</option>
+                <option value="4">The clear plan and normal start time</option>
+              </select>
+          </fieldset>
+          <fieldset>
+            <!--Improvements(check multiple)-->
+            <legend name="improvements">Are there any improvements for the next get together? (Check all that apply)</legend>
+              <input id="meat" type="checkbox" name="improvments" value="meat" class="inline"><label for="meat" class="inline">Buy or thaw meat before</label><br/>
+              <input id="schedule" type="checkbox" name="improvements" value="schedule" class="inline"><label for="schedule" class="inline">Schedule later in the day</label><br/>
+              <input id="orderout" type="checkbox" name="improvements" value="orderout" class="inline"><label for="orderout" class="inline"><s>Only let people volunteer for what</s> Order out</label><br/>
+              <input id="shade" type="checkbox" name="improvements" value="shade" class="inline"><label for="shade" class="inline">Set up in the shade</label><br/>
+              <input id="prepare" type="checkbox" name="improvements" value="prepare" class="inline"><label for="prepare" class="inline"><s>Prepare food ahead</s> Order out</label><br/>
+              <input id="fridge" type="checkbox" name="improvements" value="fridge" class="inline"><label for="fridge" class="inline">Prepare fridge space ahead of time</label><br/>
+              <input id="ac" type="checkbox" name="improvements" value="ac" class="inline"><label for="ac" class="inline">Rent air conditioned tent</label><br/>
+              <input id="dont" type="checkbox" name="improvements" value="dont" class="inline"><label for="dont" class="inline">Maybe just don't plan outside next time</label><br/>
+              <input id="other" type="checkbox" name="improvements" value="other" class="inline"><label for="other" class="inline">Other_________________________</label><br/>
+          </fieldset>
+          <fieldset>
+            <!--Comments box,Submit button-->
+            <label>Any additional comments or suggestions? <br/>
+              <textarea name="comments" rows="5" cols="50" placeholder="Enter your comments here..."></textarea>
+            </label>
+            <input type="submit" value="Submit" id="submit"/>
+          </fieldset>
+        </form>
+          <footer>
+            <p>Thanks for coming! You don't gotta go home, but you can't stay here!</p>
+          </footer>
+        </div>
     </div>
+    <p id="credit">Image by <a href="https://pixabay.com/users/roadlight-15702095/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5625268">政徳 吉田</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5625268">Pixabay</a></p>
   </body>
 </html>
